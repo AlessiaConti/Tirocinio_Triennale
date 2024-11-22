@@ -13,7 +13,17 @@ L’attività principale del tirocinio è stata quella di analizzare l’archite
   - Numpy
   - Matplotlib
   - SciPy 
-  - Scikit-learn
+  - Scikit-learn: algoritmo FastICA
   - TensorFlow
 - EEGLAB
   - BioSignal Toolbox 
+
+## Formato del dataset
+Il dataset a disposizione è costituito dai segnali EEG di 35 pazienti, 20 affetti da Alzheimer (AD) e 15 sani (N). 
+- I dati sono stati forniti in formato EDF (European Data Format), un formato utilizzato in ambito medico per lo scambio e l'archiviazione di segnali biologici.
+- A partire dal formato EDF iniziale, è stato fatto un preprocessing iniziale in cui i dati sono stati salvati in formato NPY. Un file NPY è un file di array NumPy creato con la libreria NumPy di Python. Il file NPY memorizza tutte le informazioni necessarie per ricostruire correttamente l’array.
+- Per ogni segnale, inoltre, è stato creato un file in formato NPZ (NumPy Zipped Data), cioè un file zip contenente più file NPY, uno per ogni array.
+- Per processare i segnali con le funzioni dell’EEGLAB, però, è necessario convertire il formato NPZ in formati supportati dall’EEGLAB, per questo progetto sono stati scelti i formati MAT e CSV
+
+## Architettura del modello
+## Risultati finali
