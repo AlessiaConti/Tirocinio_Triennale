@@ -13,10 +13,13 @@ L’attività principale del tirocinio è stata quella di analizzare l’archite
   - Numpy
   - Matplotlib
   - SciPy 
-  - Scikit-learn: algoritmo FastICA
+  - Scikit-learn*
   - TensorFlow
 - EEGLAB
-  - BioSignal Toolbox 
+  - BioSignal Toolbox
+
+_*La funzione principale presa da questa libreria è FastICA: un algoritmo veloce per eseguire l'analisi indipendente dei componenti (ICA, Independent Component Analysis), utilizzata per la pre-elaborazione dei segnali_
+
 
 ## Formato del dataset
 Il dataset a disposizione è costituito dai segnali EEG di 35 pazienti, 20 affetti da Alzheimer (AD) e 15 sani (N). 
