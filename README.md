@@ -8,9 +8,12 @@ L’attività principale del tirocinio è stata quella di analizzare l’archite
 
 ## Strumenti Utilizzati
 - EDFbrowser
+- Google Collaboratory
 - Librerie di Python:
   - Numpy
   - Matplotlib
   - SciPy 
   - Scikit-learn
-- EEGLAB 
+  - TensorFlow
+- EEGLAB
+  - BioSignal Toolbox 
