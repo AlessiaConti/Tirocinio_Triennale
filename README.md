@@ -18,12 +18,12 @@ L’attività principale del tirocinio è stata quella di analizzare l’archite
 - EEGLAB
   - BioSignal Toolbox
 
-_*La funzione principale presa da questa libreria è FastICA: un algoritmo veloce per eseguire l'analisi indipendente dei componenti (ICA, Independent Component Analysis), utilizzata per la pre-elaborazione dei segnali_
+_*La funzione principale presa dalla libreria Scikit-learn è FastICA: un algoritmo veloce per eseguire l'analisi indipendente dei componenti (ICA, Independent Component Analysis), utilizzata per la pre-elaborazione dei segnali:_
 
 ```
-transformer= sklearn.decomposition.FastICA(n_components=None, algorithm='parallel',
-         whiten='arbitrary-variance', fun='cube',fun_args=None, max_iter=1000, tol=0.0001,
-         w_init=None, whiten_solver='eigh', random_state=None)
+transformer= sklearn.decomposition.FastICA(n_components=None, algorithm='parallel', whiten='arbitrary-variance', 
+                                             fun='cube',fun_args=None, max_iter=1000, tol=0.0001,
+                                              w_init=None, whiten_solver='eigh', random_state=None)
 ```
 ```
 eeg= transformer.fit_transform(eeg)
@@ -37,7 +37,7 @@ Il dataset a disposizione è costituito dai segnali EEG di 35 pazienti, 20 affet
 - [x] Per ogni segnale, inoltre, è stato creato un file in formato **NPZ** (NumPy Zipped Data), cioè un file zip contenente più file NPY, uno per ogni array.
 - [x] Il passo successivo è applicare le funzioni dell’EEGLAB ai segnali del dataset per eliminarne le distorsioni, quindi è necessario convertire il formato NPZ in formati supportati dall’EEGLAB; per questo progetto sono stati scelti i formati **MAT** e **CSV**.
 
-## Architettura del modello
+
 ## Risultati finali
 ![img1](https://github.com/AlessiaConti/Tirocinio_Triennale/blob/main/tab1.png)
 ![img2](https://github.com/AlessiaConti/Tirocinio_Triennale/blob/main/tab2.png)
