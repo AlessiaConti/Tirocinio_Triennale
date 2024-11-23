@@ -1,7 +1,8 @@
-# Tirocinio_Triennale
+# Tirocinio/Tesi_Triennale
 Progetto di tirocinio svolto durante la Triennale di Elettronica all'Univpm.
 
 ## ***Ottimizzazione di una rete neurale ricorrente per la classificazione di pazienti affetti da Alzheimer tramite pre-processamento del segnale EEG***🧠
+Recentemente, c'è stato un crescente interesse della ricerca nell'utilizzo dell'elettroencefalogramma (EEG) come strumento di diagnosi non invasivo per le malattie neurodegenerative come l'Alzheimer (Alzheimer’s Disease, AD). L'EEG misura l'attività elettrica cerebrale e può identificare anomalie nelle onde cerebrali legate a determinati disturbi. Questi segnali possono essere analizzati e classificati utilizzando tecniche di apprendimento automatico, come le tecniche di Deep Learning. Gli algoritmi di Deep Learning hanno dimostrato di avere la capacità di estrarre informazioni rilevanti dal segnale EEG chiamate “features” e grazie a queste caratteristiche, sono in grado di distinguere automaticamente i pazienti sani da quelli affetti da AD, dopo essere state adeguatamente implementate e addestrate.
 
 ## Obiettivo
 L’attività principale del tirocinio è stata quella di analizzare l’architettura di una rete neurale già implementata, per aggiungere un ulteriore preprocessing dei dati al fine di migliorare i risultati del modello. La rete è stata addestrata a distinguere un paziente sano da uno malato utilizzando un dataset ottenuto dalle analisi EEG di 35 pazienti, 20 affetti da Alzheimer e 15 sani. Questi dati provengono dal Dipartimento di Medicina Sperimentale e Clinica di Ancona. 
