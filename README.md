@@ -40,5 +40,11 @@ Il dataset a disposizione è costituito dai segnali EEG di 35 pazienti, 20 affet
 
 
 ## Risultati finali
+Parametri | train accuracy | val accuracy | test accuracy 
+---- | ---- | ---- | ----
+n_components= None, max_iter=200, tol=0.0001 | 0.9876 | 0.9857 | 0.4404
+n_components= 16, max_iter=200, tol=0.0001 | 0.9898 | 0.9884 | 0.5775
+n_components= None, max_iter=200, tol=0.001 | 0.9899 | 0.9889 | 0.5355
+
 ![img1](https://github.com/AlessiaConti/Tirocinio_Triennale/blob/main/tab1.png)
 ![img2](https://github.com/AlessiaConti/Tirocinio_Triennale/blob/main/tab2.png)
