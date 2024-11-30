@@ -1,5 +1,5 @@
-# Tirocinio/Tesi_Triennale
-Progetto di tirocinio e tesi sperimentale per la Laurea Triennale di Ingegneria Elettronica all'Università Politecnica delle Marche.
+# Tirocinio Curriculare
+Progetto di tirocinio per la Laurea Triennale di Ingegneria Elettronica all'Università Politecnica delle Marche.
 
 ## ***Ottimizzazione di una rete neurale ricorrente per la classificazione di pazienti affetti da Alzheimer tramite pre-processamento del segnale EEG***🧠
 C'è un crescente interesse della ricerca nell'utilizzo dell'elettroencefalogramma (EEG) come strumento di diagnosi non invasivo per le malattie neurodegenerative come l'Alzheimer (Alzheimer’s Disease, AD). L'EEG misura l'attività elettrica cerebrale e può identificare anomalie nelle onde cerebrali legate a determinati disturbi. Gli algoritmi di Deep Learning hanno dimostrato di avere la capacità di estrarre informazioni rilevanti dal segnale EEG chiamate “features” e grazie a queste caratteristiche, sono in grado di distinguere automaticamente i pazienti sani da quelli affetti da AD, dopo essere state adeguatamente implementate e addestrate.
