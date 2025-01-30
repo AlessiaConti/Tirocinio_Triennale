@@ -36,8 +36,7 @@ Il dataset a disposizione è costituito dai segnali EEG di 35 pazienti, 20 affet
 - [x] I dati sono stati forniti in formato **EDF** (European Data Format), un formato utilizzato in ambito medico per lo scambio e l'archiviazione di segnali biologici.
 - [x] A partire dal formato EDF iniziale, è stato fatto un preprocessing iniziale in cui i dati sono stati salvati in formato **NPY**. Un file NPY è un file di array NumPy creato con la libreria NumPy di Python. Il file NPY memorizza tutte le informazioni necessarie per ricostruire correttamente l’array.
 - [x] Per ogni segnale, inoltre, è stato creato un file in formato **NPZ** (NumPy Zipped Data), cioè un file zip contenente più file NPY, uno per ogni array.
-- [x] Il passo successivo è applicare le funzioni dell’EEGLAB ai segnali del dataset per eliminarne le distorsioni, quindi è necessario convertire il formato NPZ in formati supportati dall’EEGLAB; per questo progetto sono stati scelti i formati **MAT** e **CSV**.
-
+- [x] Il passo successivo è applicare le funzioni dell’EEGLAB ai segnali del dataset per eliminarne le distorsioni, quindi è necessario convertire il formato NPZ in formati supportati dall’EEGLAB; per questo progetto sono stati scelti i formati **MAT** e **CSV**. 
 
 ## Risultati finali
 - Rete di partenza senza ICA:
@@ -59,5 +58,4 @@ Il dataset a disposizione è costituito dai segnali EEG di 35 pazienti, 20 affet
 - Nella [Tab.3](img/tab3.png)  invece ho modificato i parametri della rete, provando a non eseguire la PCA e aumentando il numero di epoche. Un'epoca consiste in un ciclo completo di allenamento sul train set. Una volta che tutti i campioni del set sono stati visti, la rete ricomincia, segnando l'inizio della 2° epoca. Quindi all’aumentare del numero di epoche, il modello sarà più allenato nella predizione dei risultati, ma il rischio è quello di un overfitting: una scarsa capacità di adattamento a nuovi dati mai visti prima. Questo potrebbe essere il motivo per cui, aumentando il numero di epoche il modello non diventa più preciso ma, come si vede dalla Tab. 3, la test accuracy diminuisce ancora.
 
 ## Riferimenti
-[Articolo](https://doi.org/10.3390/s22103696) «Riconoscimento della malattia di Alzheimer basato su EEG utilizzando una rete neurale ricorrente robusta-PCA e LSTM»,Sensors 2022. 
-Autori: M. Alessandrini, G. Biagetti, P. Crippa, L. Falaschetti, S. Luzzi, C.Turchetti
+La parte di codice relativa al preprocessing è contenuta nella cartella [EEG_ReteRNN](EEG_ReteRNN), mentre la rete neurale utilizzata non è disponibile. La sua implementazione è descritta nel seguente articolo: [«Riconoscimento della malattia di Alzheimer basato su EEG utilizzando una rete neurale ricorrente robusta-PCA e LSTM»](https://doi.org/10.3390/s22103696) ,Sensors 2022. Autori: M. Alessandrini, G. Biagetti, P. Crippa, L. Falaschetti, S. Luzzi, C.Turchetti
